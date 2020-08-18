@@ -4,23 +4,23 @@ Device configuration for Sony Xperia XZ1 Compact (lilac)
 Description
 -----------
 
-This repository is for Havoc OS on Sony Xperia XZ1 Compact (lilac).
+This repository is for Pixel Experience Plus on Sony Xperia XZ1 Compact (lilac).
 
-How to build Havoc OS
+How to build Pixel Experience Plus
 ----------------------
 
 * Make a workspace:
 
-        mkdir -p ~/havoc
-        cd ~/havoc
+        mkdir -p ~/pe
+        cd ~/pe
 
 * Initialize the repo:
 
-        repo init -u https://github.com/Havoc-OS/android_manifest.git -b ten
+        repo init -u https://github.com/PixelExperience/manifest -b ten-plus
 
 * Create a local manifest:
 
-        git clone https://github.com/shank03/local_manifests.git -b havoc-10 .repo/local_manifests
+        git clone https://github.com/shank03/local_manifests.git -b pe-10 .repo/local_manifests
 
 * Sync the repo:
 
@@ -31,7 +31,7 @@ How to build Havoc OS
 * Setup the environment
 
         . build/envsetup.sh
-        lunch havoc_lilac-userdebug
+        lunch aosp_lilac-userdebug
 
 * Build LineageOS
 
