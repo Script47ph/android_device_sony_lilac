@@ -16,7 +16,8 @@
 
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/havoc_lilac.mk \
-    $(LOCAL_DIR)/aosp_lilac.mk
+    $(LOCAL_DIR)/aosp_lilac.mk \
+    $(LOCAL_DIR)/rr_lilac.mk
 
 COMMON_LUNCH_CHOICES := \
     havoc_lilac-user \
@@ -24,4 +25,7 @@ COMMON_LUNCH_CHOICES := \
     havoc_lilac-eng \
     aosp_lilac-user \
     aosp_lilac-userdebug \
-    aosp_lilac-eng
+    aosp_lilac-eng \
+    rr_lilac-user \
+    rr_lilac-userdebug \
+    rr_lilac-eng
