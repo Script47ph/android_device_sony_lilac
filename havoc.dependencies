@@ -1,14 +1,17 @@
 [
   {
     "repository": "whatawurst/android_kernel_sony_msm8998",
-    "target_path": "kernel/sony/msm8998"
+    "target_path": "kernel/sony/msm8998",
+    "branch": "lineage-18.1"
   },
   {
     "repository": "Havoc-Devices/android_device_sony_yoshino-common",
-    "target_path": "device/sony/yoshino-common"
+    "target_path": "device/sony/yoshino-common",
+    "branch": "11"
   },
   {
     "repository": "Havoc-Devices/android_vendor_sony_lilac",
-    "target_path": "vendor/sony/lilac"
+    "target_path": "vendor/sony/lilac",
+    "branch": "11"
   }
 ]
