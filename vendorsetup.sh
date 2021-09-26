@@ -5,4 +5,4 @@ export WITHOUT_CHECK_API=true
 
 # Fix mem leak issue from gralloc
 cp device/sony/lilac/patches/mem.patch hardware/qcom-caf/msm8998/display
-cd hardware/qcom-caf/msm8998/display && git apply mem.patch
+cd hardware/qcom-caf/msm8998/display && git apply mem.patch && cd ../../../..
