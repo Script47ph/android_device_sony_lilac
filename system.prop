@@ -63,4 +63,5 @@ camera.lowpower.record.enable=1
 # Havoc-OS
 ro.havoc.device.name=Sony Xperia XZ1 Compact
 ro.havoc.group.url=https://t.me/havoc_lilac
-ro.havoc.maintainer=Shashank Verma (shank03)
+ro.havoc.maintainer=Shashank Verma
+ro.havoc.maintainer.username=shank03
