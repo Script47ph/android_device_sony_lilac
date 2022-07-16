@@ -2,16 +2,16 @@
   {
     "repository": "android_kernel_sony_msm8998",
     "target_path": "kernel/sony/msm8998",
-    "branch": "eleven"
+    "branch": "twelve"
   },
   {
     "repository": "android_device_sony_yoshino-common",
     "target_path": "device/sony/yoshino-common",
-    "branch": "eleven"
+    "branch": "twelve"
   },
   {
     "repository": "android_vendor_sony_lilac",
     "target_path": "vendor/sony/lilac",
-    "branch": "eleven"
+    "branch": "twelve"
   }
 ]
