@@ -9,14 +9,14 @@ $(call inherit-product, device/sony/lilac/device.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o.mk)
 
 ### BOOTANIMATION
-# vendor/havoc/config/common_full_phone.mk
+# vendor/aosp/config/common_full_phone.mk
 TARGET_SCREEN_HEIGHT := 1280
 TARGET_SCREEN_WIDTH := 720
 TARGET_BOOT_ANIMATION_RES := 720
-# vendor/havoc/config/common.mk
+# vendor/aosp/config/common.mk
 TARGET_BOOTANIMATION_HALF_RES := true
 
-### Havoc Stuffs
+### Aosp Stuffs
 TARGET_GAPPS_ARCH := arm64
 TARGET_INCLUDE_STOCK_ARCORE := true
 TARGET_SUPPORTS_PIXEL_WALLPAPER := true
@@ -26,11 +26,11 @@ IS_PHONE := true
 ### FaceUnlockService
 TARGET_DISABLE_ALTERNATIVE_FACE_UNLOCK := false
 
-### HAVOC
-$(call inherit-product, vendor/nusantara/config/common_full_phone.mk)
+### AOSP
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_NAME := nusantara_lilac
+PRODUCT_NAME := aosp_lilac
 PRODUCT_DEVICE := lilac
 PRODUCT_BRAND := Sony
 PRODUCT_MODEL := G8441

@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/nusantara_lilac.mk
+    $(LOCAL_DIR)/aosp_lilac.mk
 
 COMMON_LUNCH_CHOICES := \
-    nusantara_lilac-user \
-    nusantara_lilac-userdebug \
-    nusantara_lilac-eng
+    aosp_lilac-user \
+    aosp_lilac-userdebug \
+    aosp_lilac-eng
