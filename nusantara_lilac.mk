@@ -27,10 +27,10 @@ IS_PHONE := true
 TARGET_DISABLE_ALTERNATIVE_FACE_UNLOCK := false
 
 ### HAVOC
-$(call inherit-product, vendor/havoc/config/common_full_phone.mk)
+$(call inherit-product, vendor/nusantara/config/common_full_phone.mk)
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_NAME := havoc_lilac
+PRODUCT_NAME := nusantara_lilac
 PRODUCT_DEVICE := lilac
 PRODUCT_BRAND := Sony
 PRODUCT_MODEL := G8441

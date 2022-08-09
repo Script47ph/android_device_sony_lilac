@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/havoc_lilac.mk
+    $(LOCAL_DIR)/nusantara_lilac.mk
 
 COMMON_LUNCH_CHOICES := \
-    havoc_lilac-user \
-    havoc_lilac-userdebug \
-    havoc_lilac-eng
+    nusantara_lilac-user \
+    nusantara_lilac-userdebug \
+    nusantara_lilac-eng
