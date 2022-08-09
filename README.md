@@ -6,7 +6,7 @@ Description
 
 This repository is for Nusantara Project (Snow Cone) on Sony Xperia XZ1 Compact (lilac).
 
-How to build LineageOS
+How to build Nusantara Project
 ----------------------
 
 * Make a workspace:
