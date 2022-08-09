@@ -24,6 +24,7 @@ How to build Nusantara Project
 * Create a local manifest:
 
     ```bash
+    mkdir -p .repo/local_manifests && \
     vim .repo/local_manifests/roomservice.xml
     ```
 
