@@ -25,9 +25,9 @@ TARGET_FACE_UNLOCK_SUPPORTED := true
 # FaceUnlockService
 TARGET_DISABLE_ALTERNATIVE_FACE_UNLOCK := false
 
-# ProjectElixir stuffs
-ELIXIR_BUILD_TYPE := UNOFFICIAL
-ELIXIR_MAINTAINER := Script47ph
+# Nusantara stuffs
+NAD_BUILD_TYPE := UNOFFICIAL
+NAD_MAINTAINER := Script47ph
 
 # Aosp Stuffs
 TARGET_GAPPS_ARCH := arm64
@@ -36,13 +36,14 @@ TARGET_SUPPORTS_PIXEL_WALLPAPER := true
 TARGET_SUPPORTS_GOOGLE_RECORDER := true
 TARGET_ENABLE_BLUR := true
 TARGET_INCLUDE_LIVE_WALLPAPERS := true
+USE_PIXEL_CHARGING := true
 IS_PHONE := true
 
-### AOSP
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+### NUSANTARA
+$(call inherit-product, vendor/nusantara/config/common_full_phone.mk)
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_NAME := aosp_lilac
+PRODUCT_NAME := nad_lilac
 PRODUCT_DEVICE := lilac
 PRODUCT_BRAND := Sony
 PRODUCT_MODEL := G8441

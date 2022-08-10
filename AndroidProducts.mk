@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_lilac.mk
+    $(LOCAL_DIR)/nad_lilac.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_lilac-user \
-    aosp_lilac-userdebug \
-    aosp_lilac-eng
+    nad_lilac-user \
+    nad_lilac-userdebug \
+    nad_lilac-eng
