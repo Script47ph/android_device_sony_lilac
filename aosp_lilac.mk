@@ -39,11 +39,10 @@ BUILD_VERSION_TAGS := release-keys
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=lilac \
-    PRIVATE_BUILD_DESC="raven-user 12 SQ3A.220605.009.B1 8650216 release-keys" \
+    PRIVATE_BUILD_DESC="G8441-user 9 47.2.A.11.228 3311891731 release-keys" \
     BUILD_NUMBER=8650216
 
-# Pixel 6 Pro June fingerprint
-BUILD_FINGERPRINT := google/raven/raven:12/SQ3A.220605.009.B1/8650216:user/release-keys
-#BUILD_FINGERPRINT := Sony/G8441/G8441:9/47.2.A.11.228/3311891731:user/release-keys
+
+BUILD_FINGERPRINT := Sony/G8441/G8441:9/47.2.A.11.228/3311891731:user/release-keys
 
 PRODUCT_GMS_CLIENTID_BASE := android-sony-mobile
