@@ -5,6 +5,12 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 # Inherit device configuration
 $(call inherit-product, device/sony/lilac/device.mk)
 
+# Inherit some common DotOS stuff.
+$(call inherit-product, vendor/dot/config/common.mk)
+
+### AOSP
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+
 # Product API level
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o.mk)
 
@@ -25,10 +31,6 @@ TARGET_FACE_UNLOCK_SUPPORTED := true
 # FaceUnlockService
 TARGET_DISABLE_ALTERNATIVE_FACE_UNLOCK := false
 
-# ProjectElixir stuffs
-ELIXIR_BUILD_TYPE := UNOFFICIAL
-ELIXIR_MAINTAINER := Script47ph
-
 # Aosp Stuffs
 TARGET_GAPPS_ARCH := arm64
 TARGET_INCLUDE_STOCK_ARCORE := true
@@ -38,11 +40,8 @@ TARGET_ENABLE_BLUR := true
 TARGET_INCLUDE_LIVE_WALLPAPERS := true
 IS_PHONE := true
 
-### AOSP
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
-
 ## Device identifier. This must come after all inclusions
-PRODUCT_NAME := aosp_lilac
+PRODUCT_NAME := dot_lilac
 PRODUCT_DEVICE := lilac
 PRODUCT_BRAND := Sony
 PRODUCT_MODEL := G8441

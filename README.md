@@ -4,21 +4,21 @@ Device configuration for Sony Xperia XZ1 Compact (lilac)
 Description
 -----------
 
-This repository is for Project Elixir (Snow Cone) on Sony Xperia XZ1 Compact (lilac).
+This repository is for Dot OS (Snow Cone) on Sony Xperia XZ1 Compact (lilac).
 
 How to build
 ----------------------
 
 * Make a workspace:
     ```bash
-    mkdir -p ~/ProjectElixir && \
-    cd ~/ProjectElixir
+    mkdir -p ~/DroidOnTime && \
+    cd ~/DroidOnTime
     ```
 
 * Initialize the repo:
 
     ```bash
-    repo init --depth=1 -u https://github.com/Project-Elixir/manifest -b snow
+    repo init --depth=1 -u https://github.com/DotOS/manifest.git -b dot12.1
     ```
 
 * Create a local manifest:
@@ -34,7 +34,7 @@ How to build
         <!-- SONY -->
         <project name="whatawurst/android_kernel_sony_msm8998" path="kernel/sony/msm8998" remote="github" revision="lineage-19.1" />
         <project name="Havoc-Devices/android_device_sony_yoshino-common" path="device/sony/yoshino-common" remote="github" revision="twelve" />
-        <project name="Script47ph/android_device_sony_lilac" path="device/sony/lilac" remote="github" revision="ProjectElixir-12.1" />
+        <project name="Script47ph/android_device_sony_lilac" path="device/sony/lilac" remote="github" revision="dot-12.1" />
 
         <!-- blobs for lilac -->
         <project name="Havoc-Devices/android_vendor_sony_lilac" path="vendor/sony/lilac" remote="github" revision="twelve" />
@@ -51,10 +51,10 @@ How to build
     
     ```bash
     . build/envsetup.sh && \
-    lunch aosp_lilac-userdebug
+    lunch dot_lilac-userdebug
     ```
 
-* Build LineageOS
+* Build
 
     ```bash
     make -j$(nproc --all) bacon
