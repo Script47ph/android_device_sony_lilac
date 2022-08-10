@@ -8,9 +8,6 @@ $(call inherit-product, device/sony/lilac/device.mk)
 # Inherit some common DotOS stuff.
 $(call inherit-product, vendor/dot/config/common.mk)
 
-### AOSP
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
-
 # Product API level
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o.mk)
 
