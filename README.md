@@ -34,7 +34,7 @@ How to build
         <!-- SONY -->
         <project name="whatawurst/android_kernel_sony_msm8998" path="kernel/sony/msm8998" remote="github" revision="lineage-19.1" />
         <project name="Havoc-Devices/android_device_sony_yoshino-common" path="device/sony/yoshino-common" remote="github" revision="twelve" />
-        <project name="Script47ph/android_device_sony_lilac" path="device/sony/lilac" remote="github" revision="aosp-12" />
+        <project name="Script47ph/android_device_sony_lilac" path="device/sony/lilac" remote="github" revision="ProjectElixir-12.1" />
 
         <!-- blobs for lilac -->
         <project name="Havoc-Devices/android_vendor_sony_lilac" path="vendor/sony/lilac" remote="github" revision="twelve" />

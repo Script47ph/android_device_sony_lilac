@@ -27,7 +27,7 @@ ro.semc.ms_type_id=PM-1061-BV
 ro.semc.version.fs=GENERIC
 ro.semc.version.fs_revision=47.2.A.11.228
 ro.semc.product.name=Xperia XZ1 Compact
-ro.semc.product.device=G84
+ro.semc.product.device=G8441
 
 # Enabling Assistant
 ro.opa.eligible_device=true
@@ -51,9 +51,3 @@ persist.camera.llnoise=1
 persist.tnr.process.plates=2
 persist.denoise.process.plates=2
 camera.lowpower.record.enable=1
-
-# Havoc-OS
-ro.havoc.device.name=Sony Xperia XZ1 Compact
-ro.havoc.group.url=https://t.me/+f_X6QcJTdSE0OGU9
-ro.havoc.maintainer=Shashank Verma
-ro.havoc.maintainer.username=shank03
