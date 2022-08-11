@@ -5,8 +5,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 # Inherit device configuration
 $(call inherit-product, device/sony/lilac/device.mk)
 
-# Inherit some common DotOS stuff.
-$(call inherit-product, vendor/dot/config/common.mk)
+# Inherit some common xdroid stuff.
+$(call inherit-product, vendor/xdroid/config/common.mk)
+XDROID_BOOT := 720
+XDROID_MAINTAINER := Script47ph
 
 # Product API level
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o.mk)
@@ -15,9 +17,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o.mk)
 TARGET_SCREEN_HEIGHT := 1280
 TARGET_SCREEN_WIDTH := 720
 
-# Boot Resolution
-TARGET_BOOT_ANIMATION_RES := 720
-TARGET_BOOTANIMATION_HALF_RES := true
+# # Boot Resolution
+# TARGET_BOOT_ANIMATION_RES := 720
+# TARGET_BOOTANIMATION_HALF_RES := true
 
 # Quick tap
 TARGET_SUPPORTS_QUICK_TAP := true
@@ -38,7 +40,7 @@ TARGET_INCLUDE_LIVE_WALLPAPERS := true
 IS_PHONE := true
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_NAME := dot_lilac
+PRODUCT_NAME := xdroid_lilac
 PRODUCT_DEVICE := lilac
 PRODUCT_BRAND := Sony
 PRODUCT_MODEL := G8441

@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/dot_lilac.mk
+    $(LOCAL_DIR)/xdroid_lilac.mk
 
 COMMON_LUNCH_CHOICES := \
-    dot_lilac-user \
-    dot_lilac-userdebug \
-    dot_lilac-eng
+    xdroid_lilac-user \
+    xdroid_lilac-userdebug \
+    xdroid_lilac-eng
