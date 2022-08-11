@@ -57,5 +57,5 @@ How to build
 * Build
 
     ```bash
-    make -j$(nproc --all) bacon
+    make -j$(nproc --all) xd
     ```
