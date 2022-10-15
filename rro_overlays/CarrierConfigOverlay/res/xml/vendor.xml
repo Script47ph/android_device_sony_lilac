@@ -48,7 +48,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
 
     <carrier_config>
         <!-- GPS config -->
-        <string name="gps.supl_host">supl.sonyericsson.com</string>
+        <string name="gps.supl_host">supl.google.com</string>
         <string name="gps.supl_port">7275</string>
         <string name="gps.supl_mode">1</string>
         <string name="gps.supl_ver">0x20000</string>
@@ -58,8 +58,8 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <!-- Enable SS over UT by default-->
         <boolean name="carrier_supports_ss_over_ut_bool" value="true" />
 
-        <!-- Don't allow disabling 4g calling/VoLTE -->
-        <boolean name="editable_enhanced_4g_lte_bool" value="false" />
+        <!-- Show LTE+ icon if available -->
+        <boolean name="hide_lte_plus_data_icon_bool" value="false" />
     </carrier_config>
 
     <!--

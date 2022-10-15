@@ -61,32 +61,16 @@ extract "${MY_DIR}/proprietary-files.txt" "${SRC}" "${KANG}" --section "${SECTIO
 extract "${MY_DIR}/proprietary-files-vendor.txt" "${SRC}" "${KANG}" --section "${SECTION}"
 
 #
-# Fix product path
+# Blobs fixup start
 #
 
 DEVICE_ROOT="${ANDROID_ROOT}"/vendor/"${VENDOR}"/"${DEVICE}"/proprietary
 
-function fix_product_path () {
-    sed -i \
-        's/\/system\/framework\//\/system\/product\/framework\//g' \
-        "${DEVICE_ROOT}"/"$1"
-}
-
-fix_product_path product/etc/permissions/com.qualcomm.qti.imscmservice-V2.0-java.xml
-fix_product_path product/etc/permissions/com.qualcomm.qti.imscmservice-V2.1-java.xml
-fix_product_path product/etc/permissions/com.qualcomm.qti.imscmservice.xml
-fix_product_path product/etc/permissions/embms.xml
-fix_product_path product/etc/permissions/lpa.xml
-fix_product_path product/etc/permissions/qcrilhook.xml
-fix_product_path product/etc/permissions/telephonyservice.xml
+# Fix referenced set_sched_policy for stock audio hal
+"${PATCHELF}" --replace-needed "libcutils.so" "libprocessgroup.so" "${DEVICE_ROOT}"/vendor/lib/hw/audio.primary.msm8998.so
 
 #
-# Add shims to lib-imsvideocodec.so
+# Blobs fixup end
 #
-
-"${PATCHELF}" --add-needed "libui_shim.so" "${DEVICE_ROOT}"/product/lib/lib-imsvideocodec.so
-"${PATCHELF}" --add-needed "libgui_shim.so" "${DEVICE_ROOT}"/product/lib/lib-imsvideocodec.so
-"${PATCHELF}" --add-needed "libui_shim.so" "${DEVICE_ROOT}"/product/lib64/lib-imsvideocodec.so
-"${PATCHELF}" --add-needed "libgui_shim.so" "${DEVICE_ROOT}"/product/lib64/lib-imsvideocodec.so
 
 "${MY_DIR}"/setup-makefiles.sh
